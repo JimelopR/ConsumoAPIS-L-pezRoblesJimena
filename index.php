@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>Conector de APIs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Consumo de APIs</title>
     <style>
         /* Estilos básicos para la página */
         body { 
-            font-family: 'Pacifico', cursive; /* Fuente más femenina */
+            font-family: 'Dancing Script', cursive;
             text-align: center; 
         }
         .container { 
@@ -28,7 +28,7 @@
             color: white;
             border: none;
             font-size: 16px;
-            font-family: 'Pacifico', cursive; /* Fuente aplicada al botón también */
+            font-family: 'Dancing Script', cursive; /* Fuente aplicada al botón también */
             cursor: pointer;
             border-radius: 5px; /* Bordes redondeados */
             transition: background-color 0.3s ease;
@@ -91,10 +91,10 @@
 
                     // Mostrar los datos obtenidos en los elementos HTML correspondientes
                     document.getElementById('api1').innerText = 
-                        `📍 Dirección: ${addressData.street}, ${addressData.city}, ${addressData.country}`;
+                        `Dirección: ${addressData.street}, ${addressData.city}, ${addressData.country}`;
 
                     document.getElementById('api2').innerText = 
-                        `🧑 Persona: ${personData.firstname} ${personData.lastname}, ${personData.email}`;
+                        `Persona: ${personData.firstname} ${personData.lastname}, ${personData.email}`;
 
                     // Mostrar imagen si existe
                     if (imageURL) {

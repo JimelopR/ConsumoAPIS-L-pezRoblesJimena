@@ -1,11 +1,17 @@
 <?php
+
 header('Content-Type: application/json');
+// para especificar que el contenido de la respuesta es en formato JSON
 
 // URLs de las 3 APIs
 $api_urls = [
     "address" => "https://fakerapi.it/api/v2/addresses?_quantity=1",
     "person"  => "https://fakerapi.it/api/v2/persons?_quantity=1",
     "imagen"  => "https://fakerapi.it/api/v2/images?_type=any&_width=500&_height=230"
+    /*_quantity=1 indica que se solicita una única dirección.
+    Los parámetros _type=any permiten cualquier tipo de imagen 
+    y los parámetros _width=500 y _height=230 definen las dimensiones 
+    de la imagen (500px de ancho y 230px de alto).*/ 
 ];
 
 // Función para hacer solicitudes a la API
